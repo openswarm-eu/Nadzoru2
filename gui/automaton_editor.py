@@ -25,7 +25,7 @@ class AutomatonEditor(PageMixin, Gtk.Box):
 
         self.paned = Gtk.Paned(wide_handle=True)
         self.scrolled = Gtk.ScrolledWindow.new()
-        self.automaton_render = AutomatonRenderer(self.automaton)
+        self.automaton_render = AutomatonRendererPublic(self.automaton)
         self.sidebox = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
         self.frame_props = Gtk.Frame(label="Properties", visible=False, no_show_all=True)
 
